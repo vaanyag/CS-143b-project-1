@@ -15,9 +15,10 @@ There is a input.txt file from where the program reads the commands line by line
 ### **<ins>FUNCTIONS</ins>**
 **CREATE**
 - **create_init()** <br />
-- Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> <br />
+- Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> 
 - **create(p)** <br />
 - Creates a new process with priority 'p' 
+
 **DESTROY**
 - **check_destroy(j)** <br />
 - <ins>Helper function of destroy()</ins> <br />
