@@ -14,45 +14,30 @@ There is a input.txt file from where the program reads the commands line by line
 
 ### **<ins>FUNCTIONS</ins>**
 **<ins>CREATE</ins>**
-- **create_init()** <br />
-    - Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> 
-- **create(p)** <br />
-    - Creates a new process with priority 'p' 
+- **create_init()** : Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> 
+- **create(p)** : Creates a new process with priority 'p' 
 
 **<ins>DESTROY</ins>**
-- **check_destroy(j)** <br />
-    - <ins>Helper function of destroy()</ins> <br />
-    - It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function <br /><br />
-- **destroy(j)** <br />
-    - Destroys the process j if it exists along with its children and grandchildren (if any) <br /><br />
-- **print_destroy_count()** <br />
-    - <ins>Helper function of destroy()</ins> <br />
-    - Outputs the total number of processes destroyed <br /><br />
-- **remove_parent()** <br />
-    - <ins>Helper function of destroy()</ins> <br />
-    - Remove j from the children list of its parent process when destroy is called 
+- **destroy(j)** : Destroys the process j if it exists along with its children and grandchildren (if any) <br />
+- **check_destroy(j)**[<ins>Helper function of destroy()</ins>] : It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function <br />
+- **print_destroy_count()**[<ins>Helper function of destroy()</ins> <br />] : Outputs the total number of processes destroyed <br /><br />
+- **remove_parent()**[<ins>Helper function of destroy()</ins>] : Remove j from the children list of its parent process when destroy is called 
     
 **<ins>REQUEST</ins>**
-- **request(r,k)** <br /> 
-    - Request k units of r resource 
+- **request(r,k)** : Request k units of r resource 
 
 **<ins>RELEASE</ins>**
-- **release(r,k)** <br />
-    - Releases k units of resource r 
+- **release(r,k)** : Releases k units of resource r 
 
 **<ins>TIMEOUT</ins>**
-- **timeout()** <br />
-     - Moves the current process to the end of the reading list and call the scheduler  
+- **timeout()** : Moves the current process to the end of the reading list and call the scheduler  
 
 **<ins>SCHEDULER</ins>**
-- **scheduler()** <br />
-     - To perform context switch and schedule according to the priority 
+- **scheduler()** : To perform context switch and schedule according to the priority 
 
 **<ins>MANAGE INPUT AND OUTPUT</ins>**
-- **write_in_file()** <br />
-    - Writes the output in the output file <br /><br />
-- **menu()** <br />
-    - Calls the appropriate function according to the command in the input file  
+- **write_in_file()** : Writes the output in the output file <br /><br />
+- **menu()** : Calls the appropriate function according to the command in the input file  
 
 ### **<ins>AUTHOR</ins>**
 VAANYA GUPTA
