@@ -1,7 +1,7 @@
 # PROJECT 1 : PROCESS AND RESOURCE MANAGER
 
-ABOUT
--------------------------
+## ABOUT
+## -------------------------
 
 
 HOW TO RUN THE PROGRAM
