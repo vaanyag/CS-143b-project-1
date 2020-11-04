@@ -13,6 +13,18 @@ There is a input.txt file from where the program reads the commands line by line
 - The output.txt file contains the output of the program
 
 ### **<ins>FUNCTIONS</ins>**
+**create_init()**
+**create(p)**
+**check_destroy(j)**
+**destroy(j)**
+**print_destroy_count()**
+**remove_parent()**
+**request(r,k)**
+**release(r,k)**
+**timeout()**
+**scheduler()**
+**write_in_file()**
+**menu()**
 
 ### **<ins>AUTHOR</ins>**
 
