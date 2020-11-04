@@ -8,7 +8,7 @@ There is a input.txt file from where the program reads the commands line by line
 - The input.txt, project1.py should be in the same directory. </br>
 - To run the program: </br>
     - Make sure that the current directory is the same as the directory of input.txt and project1.py</br>
-    - Enter the command python project1.py in the terminal [if the current python version is set to 3] otherwise use python3 project1.py</br>
+    - Enter the command **python project1.py** in the terminal [if the current python version is set to 3] otherwise use **python3 project1.py**</br>
     - After the command is entered, output.txt file is generated automatically and saved in the same directory as input.txt and project1.py</br>
 - The output.txt file contains the output of the program
 
