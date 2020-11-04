@@ -14,13 +14,13 @@ There is a input.txt file from where the program reads the commands line by line
 
 ### **<ins>FUNCTIONS</ins>**
 **<ins>CREATE</ins>**
-- **create_init()** : Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> 
+- **create_init()** : Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) 
 - **create(p)** : Creates a new process with priority 'p' 
 
 **<ins>DESTROY</ins>**
-- **destroy(j)** : Destroys the process j if it exists along with its children and grandchildren (if any) <br />
-- **check_destroy(j)**[<ins>Helper function of destroy()</ins>] : It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function <br />
-- **print_destroy_count()**[<ins>Helper function of destroy()</ins> <br />] : Outputs the total number of processes destroyed <br /><br />
+- **destroy(j)** : Destroys the process j if it exists along with its children and grandchildren (if any) 
+- **check_destroy(j)**[<ins>Helper function of destroy()</ins>] : It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function 
+- **print_destroy_count()**[<ins>Helper function of destroy()</ins>] : Outputs the total number of processes destroyed 
 - **remove_parent()**[<ins>Helper function of destroy()</ins>] : Remove j from the children list of its parent process when destroy is called 
     
 **<ins>REQUEST</ins>**
@@ -36,7 +36,7 @@ There is a input.txt file from where the program reads the commands line by line
 - **scheduler()** : To perform context switch and schedule according to the priority 
 
 **<ins>MANAGE INPUT AND OUTPUT</ins>**
-- **write_in_file()** : Writes the output in the output file <br /><br />
+- **write_in_file()** : Writes the output in the output file 
 - **menu()** : Calls the appropriate function according to the command in the input file  
 
 ### **<ins>AUTHOR</ins>**
