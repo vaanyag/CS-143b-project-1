@@ -13,13 +13,13 @@ There is a input.txt file from where the program reads the commands line by line
 - The output.txt file contains the output of the program
 
 ### **<ins>FUNCTIONS</ins>**
-**CREATE**
+**<ins>CREATE</ins>**
 - **create_init()** <br />
     - Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> 
 - **create(p)** <br />
     - Creates a new process with priority 'p' 
 
-**DESTROY**
+**<ins>DESTROY</ins>**
 - **check_destroy(j)** <br />
     - <ins>Helper function of destroy()</ins> <br />
     - It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function <br /><br />
@@ -32,23 +32,23 @@ There is a input.txt file from where the program reads the commands line by line
     - <ins>Helper function of destroy()</ins> <br />
     - Remove j from the children list of its parent process when destroy is called 
     
-**REQUEST**
+**<ins>REQUEST</ins>**
 - **request(r,k)** <br /> 
     - Request k units of r resource 
 
-**RELEASE**
+**<ins>RELEASE</ins>**
 - **release(r,k)** <br />
     - Releases k units of resource r 
 
-**TIMEOUT**
+**<ins>TIMEOUT</ins>**
 - **timeout()** <br />
      - Moves the current process to the end of the reading list and call the scheduler  
 
-**SCHEDULER**
+**<ins>SCHEDULER</ins>**
 - **scheduler()** <br />
      - To perform context switch and schedule according to the priority 
 
-**MANAGE INPUT AND OUTPUT**
+**<ins>MANAGE INPUT AND OUTPUT</ins>**
 - **write_in_file()** <br />
     - Writes the output in the output file <br /><br />
 - **menu()** <br />
