@@ -14,18 +14,32 @@ There is a input.txt file from where the program reads the commands line by line
 
 ### **<ins>FUNCTIONS</ins>**
 **create_init()** <br />
+Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0)
 **create(p)** <br />
+Creates a new process with priority 'p'
 **check_destroy(j)** <br />
+<ins>Helper function of destroy()</ins>
+It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function
 **destroy(j)** <br />
+Destroys the process j if it exists along with its children and grandchildren (if any)
 **print_destroy_count()** <br />
+<ins>Helper function of destroy()</ins>
+Outputs the total number of processes destroyed
 **remove_parent()** <br />
+<ins>Helper function of destroy()</ins>
+Remove j from the children list of its parent process when destroy is called 
 **request(r,k)** <br />
+Request k units of r resource
 **release(r,k)** <br />
+Releases k units of resource r
 **timeout()** <br />
+Moves the current process to the end of the reading list and call the scheduler 
 **scheduler()** <br />
+To perform context switch and schedule according to the priority
 **write_in_file()** <br />
+Writes the output in the output file
 **menu()** <br />
+Calls the appropriate function according to the command in the input file 
 
 ### **<ins>AUTHOR</ins>**
-
 VAANYA GUPTA
