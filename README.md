@@ -14,32 +14,32 @@ There is a input.txt file from where the program reads the commands line by line
 
 ### **<ins>FUNCTIONS</ins>**
 **create_init()** <br />
-Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0)
+Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br />
 **create(p)** <br />
-Creates a new process with priority 'p'
+Creates a new process with priority 'p' <br />
 **check_destroy(j)** <br />
-<ins>Helper function of destroy()</ins>
-It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function
+<ins>Helper function of destroy()</ins> <br />
+It checks if j is current running process or is one of the decendents of current running process and then calls the destroy function <br />
 **destroy(j)** <br />
-Destroys the process j if it exists along with its children and grandchildren (if any)
+Destroys the process j if it exists along with its children and grandchildren (if any) <br />
 **print_destroy_count()** <br />
-<ins>Helper function of destroy()</ins>
-Outputs the total number of processes destroyed
+<ins>Helper function of destroy()</ins> <br />
+Outputs the total number of processes destroyed <br />
 **remove_parent()** <br />
-<ins>Helper function of destroy()</ins>
-Remove j from the children list of its parent process when destroy is called 
-**request(r,k)** <br />
-Request k units of r resource
+<ins>Helper function of destroy()</ins> <br />
+Remove j from the children list of its parent process when destroy is called  <br />
+**request(r,k)** <br /> 
+Request k units of r resource <br />
 **release(r,k)** <br />
-Releases k units of resource r
+Releases k units of resource r <br />
 **timeout()** <br />
-Moves the current process to the end of the reading list and call the scheduler 
+Moves the current process to the end of the reading list and call the scheduler  <br />
 **scheduler()** <br />
-To perform context switch and schedule according to the priority
+To perform context switch and schedule according to the priority <br />
 **write_in_file()** <br />
-Writes the output in the output file
+Writes the output in the output file <br />
 **menu()** <br />
-Calls the appropriate function according to the command in the input file 
+Calls the appropriate function according to the command in the input file  <br />
 
 ### **<ins>AUTHOR</ins>**
 VAANYA GUPTA
