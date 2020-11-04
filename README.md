@@ -1,6 +1,6 @@
 # PROJECT 1 : PROCESS AND RESOURCE MANAGER
 
-#### <ins>ABOUT</ins>
+### **<ins>ABOUT</ins>**
 #### -------------------------
 
 
