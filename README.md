@@ -17,7 +17,7 @@ There is a input.txt file from where the program reads the commands line by line
 - **create_init()** <br />
 - Initializes: PCB[16], RCB[4] and Ready List RL with priority levels. It also creates PCB[0] (with priority = 0) <br /> <br />
 - **create(p)** <br />
-- Creates a new process with priority 'p' <br /> <br />
+- Creates a new process with priority 'p' 
 **DESTROY**
 - **check_destroy(j)** <br />
 - <ins>Helper function of destroy()</ins> <br />
@@ -29,24 +29,24 @@ There is a input.txt file from where the program reads the commands line by line
 - Outputs the total number of processes destroyed <br /><br />
 - **remove_parent()** <br />
 <ins>Helper function of destroy()</ins> <br />
-- Remove j from the children list of its parent process when destroy is called  <br />
+- Remove j from the children list of its parent process when destroy is called 
 **REQUEST**
 - **request(r,k)** <br /> 
-- Request k units of r resource <br />
+- Request k units of r resource 
 **RELEASE**
 - **release(r,k)** <br />
-- Releases k units of resource r <br />
+- Releases k units of resource r 
 **TIMEOUT**
 - **timeout()** <br />
-- Moves the current process to the end of the reading list and call the scheduler  <br />
+- Moves the current process to the end of the reading list and call the scheduler  
 **SCHEDULER**
 - **scheduler()** <br />
-- To perform context switch and schedule according to the priority <br />
+- To perform context switch and schedule according to the priority 
 **MANAGE INPUT AND OUTPUT**
 - **write_in_file()** <br />
 - Writes the output in the output file <br /><br />
 - **menu()** <br />
-- Calls the appropriate function according to the command in the input file  <br />
+- Calls the appropriate function according to the command in the input file  
 
 ### **<ins>AUTHOR</ins>**
 VAANYA GUPTA
